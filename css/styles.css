@@ -1,0 +1,437 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.oswald-uniquifier {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6ebdae5;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+
+}
+
+header a {
+    font-family: "Oswald", sans-serif;
+    font-size: 26px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+header img {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    padding-top: 15px;
+
+}
+
+/*MAIN*/
+
+main {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/fondo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.pageTitle {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #9b9a98b0;
+    text-transform: uppercase;
+}
+
+.pageTitle h1 {
+    font-family: Georgia, 'Times New Roman',    Times, serif;
+    font-size: 50px;
+    opacity: 1;
+    letter-spacing: 10px;
+    color:#fff6ea;
+    text-shadow: 0.1rem 0.1rem 0.625rem#2C1910;
+    
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: 15px;
+    text-decoration: none;
+
+}
+
+.logo h1 {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    font-size: 100px;
+    color: #E1B789;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 5px 1px 2px #2C1910;
+}
+
+.logo h2 {
+    font-size: 25px;
+    color: #FFF6EA;
+    text-shadow: -1.2px 1px 1px #D6B38D;
+    padding: 2px 4px;
+    margin: 5px;
+}
+
+.reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+
+}
+
+.reserva button {
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid #F6EBDA;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: #f6ebdafa;
+    box-shadow: -0.1rem 0.1rem 0.625rem black;
+}
+
+.reserva a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2C1910;
+}
+
+.eslogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.eslogan p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 42px;
+    color: #E2C09A;
+    text-shadow: 2px 2px 1.5px #2C1910;
+    letter-spacing: 0.325rem;
+}
+
+.stores {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 50%;
+    padding-top: 1%;
+    padding-left: 20%;
+}
+
+
+.stores section {
+    /* display: flex;
+    flex-direction:  column; */
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F6EBDA;
+    background-color: rgba(0, 0, 0, 0.637);
+    margin-right: 20px;
+    border-bottom: 1px solid #F6EBDA;
+    padding: 10px 20px;
+}
+
+.stores section p {
+    font-size: 20px;
+}
+
+
+.stores section button{
+    /*display: flex;;
+    margin-left: auto;  Empuja el botón hacia la derecha */
+    font-family: "Oswald",sans-serif;
+    font-size: 20px;
+    color: #2C1910;
+    background-color: #F6EBDA;
+    border-radius: 5%;
+    border: 1px solid #2C1910;
+    padding: 10px 20px;
+
+}
+
+
+.location {
+    background-color: #9b9a98b0;
+    padding: 20px 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+    color: #5F3927;
+    margin-right: 20px;
+    
+}
+
+.mapaC { 
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.mapaC iframe{
+    width: 700px;
+    height: 800px;
+    margin: 20px;
+}
+
+.storesDos {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 520px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #2C1910;
+    margin: 20px;
+    border-radius: 5%;
+    background-color: #FFFBEF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    height: 420px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #2C1910;
+    margin: 20px;
+    border-radius: 5%;
+    background-color: #FFFBEF;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/* no sé cómo poner los precios al costado.  
+.cafeCaliente span {
+    margin-left: auto;
+
+} */
+
+.combos ol {
+    padding-left: 20px;
+}
+
+.menu3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 410px;
+    height: 500px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #2C1910;
+    margin: 20px 20px 5px;
+    border-radius: 5%;
+    background-color: #FFFBEF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menues{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.who{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
+    height: 630px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #2C1910;
+    margin: 20px 20px 5px;
+    border-radius: 5%;
+    background-color: #FFFBEF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.how {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
+    height: 580px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #2C1910;
+    margin: 20px 20px 5px;
+    border-radius: 5%;
+    background-color: #FFFBEF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:baseline;
+    height: 100%;
+    margin-top: 20px;
+    /* padding: ; */
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Oswald",sans-serif;
+}
+.contactForm h2 {
+    font-family: "Oswald",sans-serif;
+    font-size: 35px;
+    color: #FFF6EA;
+    text-shadow: 0px 0.4px 4px #2C1910;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 20px;
+}
+
+.contactForm div{
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #5F3927;
+    background-color: #9b9a98b0;
+    margin: 30px;
+    padding: 20px 30px 20px 30px;
+    height: 500px;  
+}
+
+.contactForm label {
+    width: 200px;
+    height: 2rem;
+}
+
+.contactForm input {
+    width: 500px;
+    height: 2rem;
+
+}
+/*A LAS ID SE LAS LLAMA CON EL TIPO + # Y NOMBRE DEL id="id01" ETC. */
+.contactForm input#message {
+    width: 500px;
+    height: 5rem;
+}
+
+.contactForm input#enviarF{
+margin-top: 15px
+}
+
+/*A LAS ID SE LAS LLAMA CON EL TIPO + # Y NOMBRE DEL id="id01" ETC. */
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #f6ebdae5;
+    position: sticky;
+    bottom: 0;
+}
+
+.redes {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    /*lo fija abajo!*/
+    padding-left: 25px;
+    padding-top: 5px;
+    margin: 1px;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+}
+
+.horarios {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wpp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding-right: 25px;
+    padding-top: 5px;
+}
+
+.wpp img {
+    width: 60px;
+    height: 60px;
+}
