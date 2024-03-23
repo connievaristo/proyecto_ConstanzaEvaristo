@@ -53,15 +53,21 @@ header img {
 
 /*MAIN*/
 
-main {
-    width: auto;
-    height: auto;
+.home {
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-image: url(../assets/img/fondo.jpg);
     background-size: cover;
     background-repeat: repeat;
 }
+
+.locales {
+    width: 100%;
+    height: auto;
+    background-color: #CFC9C1;
+}
+
 
 .pageTitle {
     display: flex;
@@ -80,8 +86,13 @@ main {
     opacity: 1;
     letter-spacing: 10px;
     color:#fff6ea;
-    text-shadow: 0.1rem 0.1rem 0.625rem#2C1910;
-    
+    text-shadow: 0.1rem 0.1rem 0.625rem#2C1910;  
+}
+
+.bannerL{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
 
 .logo {
@@ -93,7 +104,6 @@ main {
     font-weight: normal;
     letter-spacing: 15px;
     text-decoration: none;
-
 }
 
 .logo h1 {
@@ -156,20 +166,40 @@ main {
     letter-spacing: 0.325rem;
 }
 
+.storesDos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: none;
+    grid-template-areas:
+    "stores mapaC"
+    ;
+
+}
+
 .stores {
-    display: flex;
-    flex-direction:column;
+    /* display: flex;
+    flex-direction:column; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 0.5fr repeat(5,0.8fr);
     justify-content: center;
-    width: 50%;
-    padding-top: 1%;
+    /* width: 50%; */
+    padding-top: 2rem;
     padding-left: 20%;
+    padding-bottom: 2rem;
 }
 
 
 .stores section {
     /* display: flex;
     flex-direction:  column; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: none;
+    grid-template-areas:
+    "div button";
     justify-content: center;
+    align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #F6EBDA;
     background-color: rgba(0, 0, 0, 0.637);
@@ -178,21 +208,29 @@ main {
     padding: 10px 20px;
 }
 
-.stores section p {
+.stores section div {
     font-size: 20px;
+    justify-content: center;
 }
 
 
-.stores section button{
-    /*display: flex;;
-    margin-left: auto;  Empuja el botón hacia la derecha */
+.stores section button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 50%;
+    height: 3rem;
+    margin-left: 9.25rem;
+    /*margin-left: auto;  Empuja el botón hacia la derecha
+    margin-bottom: 20px; */
     font-family: "Oswald",sans-serif;
     font-size: 20px;
     color: #2C1910;
     background-color: #F6EBDA;
     border-radius: 5%;
     border: 1px solid #2C1910;
-    padding: 10px 20px;
+    padding: 10px 10px;
 
 }
 
@@ -204,25 +242,34 @@ main {
     font-size: 1.25rem;
     color: #5F3927;
     margin-right: 20px;
-    
+}
+
+.location input {
+    margin-left:0.5rem;
+    margin-bottom: 0.2rem;
+    border: none;
+    width: 18rem;
+    height: 1.75rem;
+
 }
 
 .mapaC { 
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-}
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content: center;
+}  
 
 .mapaC iframe{
-    width: 700px;
+    width: 800px;
     height: 800px;
     margin: 20px;
 }
 
-.storesDos {
+/* .storesDos {
     display: flex;
     flex-direction: row;
-}
+} */
 
 .menu1 {
     display: flex;
