@@ -126,10 +126,11 @@ h1 {
 }
 
 .bannerH h2 {
-    float: right;
+    display: flex;
+    justify-content: right;
     position: relative;
     top: -4.85rem;
-    right: 4rem;
+    right: 1rem;
     bottom: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -389,12 +390,11 @@ h1 {
     /* display: flex;
     flex-direction: row; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: none;
-    grid-template-areas: none
-        "who how";
-    justify-content: center;
-    align-items: center;
+    grid-template-areas:
+    ". who how ."
+    ;
     padding: 15px 0px 15px 0px;
     /* padding: ; */
 
@@ -402,13 +402,12 @@ h1 {
 }
 
 .who {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-area: who;
+    align-items:center;
     width: 480px;
     height: 600px;
-    margin-left: 60%;
-    padding: 10px 20px 10px 10px;
+    margin: 0.125rem 1rem 0.125rem;
+    padding: 10px 20px 10px 20px;
     border: 2px solid #2C1910;
     border-radius: 5%;
     background-color: #FFFBEF;
@@ -416,13 +415,12 @@ h1 {
 }
 
 .how {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-area: how;
+    align-items:center;
     width: 450px;
     height: 580px;
-    margin-left: 30%;
-    padding: 10px 20px 10px 10px;
+    margin: 0.125rem 1rem 0.125rem;
+    padding: 10px 20px 10px 20px;
     border: 2px solid #2C1910;
     border-radius: 5%;
     background-color: #FFFBEF;
