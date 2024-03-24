@@ -74,10 +74,16 @@ header img {
     background-color: #9FABB1;
 }
 
-.locales{
+.locales {
     width: 100%;
+    height: auto;
     background-color: #F1F2EF;
+}
 
+.contacto {
+    width: 100%;
+    height: 778px;
+    background-image: url(../assets/img/bannerC.png);
 }
 
 .pageTitle {
@@ -103,17 +109,17 @@ header img {
 } */
 
 h1 {
-    font-family: Georgia, 'Times New Roman',    Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
     opacity: 1;
     letter-spacing: 10px;
-    color:#fff6ea;
+    color: #fff6ea;
     text-shadow: 0.1rem 0.1rem 0.625rem#2C1910;
     margin: 10px;
 }
 
 
-.banner{
+.banner {
     width: 100%;
     height: 50%;
     object-fit: cover;
@@ -122,12 +128,15 @@ h1 {
 .bannerH h2 {
     float: right;
     position: relative;
-    top: -4.85rem; right: 4rem; bottom: 2rem;
-    font-family: Georgia, 'Times New Roman',    Times, serif;
+    top: -4.85rem;
+    right: 4rem;
+    bottom: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     opacity: 1;
     letter-spacing: 2px;
-    color:#fff6ea; /**/
+    color: #fff6ea;
+    /**/
     text-shadow: 3rem 0.1rem 1rem #1f1c1b;
 }
 
@@ -204,18 +213,18 @@ h1 {
 
 .storesDos {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
     grid-template-areas:
-    "stores mapaC";
+        "stores mapaC";
 }
 
 .stores {
     /* display: flex;
     flex-direction:column; */
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 0.5fr repeat(5,0.8fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.5fr repeat(5, 0.8fr);
     justify-content: center;
     /* width: 50%; */
     padding-top: 2rem;
@@ -228,10 +237,10 @@ h1 {
     /* display: flex;
     flex-direction:  column; */
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
     grid-template-areas:
-    "div button";
+        "div button";
     justify-content: center;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -252,13 +261,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     width: 50%;
     height: 3rem;
     margin-left: 9.25rem;
     /*margin-left: auto;  Empuja el botón hacia la derecha
     margin-bottom: 20px; */
-    font-family: "Oswald",sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     color: #2C1910;
     background-color: #F6EBDA;
@@ -279,7 +288,7 @@ h1 {
 }
 
 .location input {
-    margin-left:0.5rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.2rem;
     border: none;
     width: 18rem;
@@ -288,13 +297,13 @@ h1 {
 }
 
 .mapaC {
-  display: flex;
-  flex-direction:column;
-  align-items:flex-start;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.mapaC iframe{
+.mapaC iframe {
     width: 800px;
     height: 800px;
     margin: 20px;
@@ -305,14 +314,14 @@ h1 {
     flex-direction: row;
 } */
 
-.menues{
+.menues {
     /* display: flex;
     flex-direction: row; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: none;
     grid-template-areas:
-    "menu1 menu2 menu3"
+        "menu1 menu2 menu3"
     ;
     justify-content: center;
     padding: 20px 0px 20px 0px;
@@ -345,7 +354,7 @@ h1 {
     height: 420px;
     padding: 10px 20px 10px 20px;
     border: 2px solid #2C1910;
-    margin:0px 5rem 0px 5rem;
+    margin: 0px 5rem 0px 5rem;
     border-radius: 5%;
     background-color: #FFFBEF;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -370,7 +379,7 @@ h1 {
     height: 500px;
     padding: 10px 20px 10px 20px;
     border: 2px solid #2C1910;
-    margin-right:20rem;
+    margin-right: 20rem;
     border-radius: 5%;
     background-color: #FFFBEF;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -383,7 +392,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
     grid-template-areas: none
-    "who how";
+        "who how";
     justify-content: center;
     align-items: center;
     padding: 15px 0px 15px 0px;
@@ -392,7 +401,7 @@ h1 {
     /* background-color: #F1F2EF; */
 }
 
-.who{
+.who {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,46 +436,54 @@ h1 {
     align-items: center;
     width: 100%;
     height: 100%;
-    font-family: "Oswald",sans-serif;
+    font-family: "Oswald", sans-serif;
 }
+
 .contactForm h2 {
-    font-family: "Oswald",sans-serif;
-    font-size: 35px;
-    color: #FFF6EA;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.35rem;
+    color: #e7e7e7;
     text-shadow: 0px 0.4px 4px #2C1910;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin: 20px;
+    margin: 2.25rem 1rem 1rem 1rem;
 }
 
-.contactForm div{
-    flex-wrap: wrap;
-    font-size: 20px;
-    color: #5F3927;
-    background-color: #9b9a98b0;
+.contactForm div {
+    /* font-size: 20px;
+    color: #5F3927; 
+    background-color: #fcfaf885;*/
     margin: 30px;
     padding: 20px 30px 20px 30px;
-    height: 500px;
+    height: 400px;
 }
 
-.contactForm label {
-    width: 200px;
+/* .contactForm label {
     height: 2rem;
-}
+} */
 
 .contactForm input {
     width: 500px;
-    height: 2rem;
+    height: 4rem;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 1.45rem;
+    margin: 10px 20px 10px 20px;
+    padding-left: 0.525rem;
 
 }
+
 /*A LAS ID SE LAS LLAMA CON EL TIPO + # Y NOMBRE DEL id="id01" ETC. */
 .contactForm input#message {
     width: 500px;
-    height: 5rem;
+    height: 6rem;
 }
 
-.contactForm input#enviarF{
-margin-top: 15px
+.contactForm input#enviarF {
+    margin-top: 15px;
+    font-weight: bolder;
+    text-transform:uppercase;
+
 }
 
 /*A LAS ID SE LAS LLAMA CON EL TIPO + # Y NOMBRE DEL id="id01" ETC. */
