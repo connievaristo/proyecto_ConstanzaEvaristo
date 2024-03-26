@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDY CAFE</title>
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Kode+Mono&family=Oswald&family=Roboto:wght@400;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> <!--para traernos iconos-->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/locales.html">Locales</a></li>
-                <li><a href="./pages/menu.html">Menu</a></li>
-                <li><a href="./pages/nosotros.html">Nuestra historia</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+            <a class="logoI" href=""><img src="./assets/img/logo.png" alt=""></a>
+            <input type="checkbox" name="" id="toggle"> <!--suele hacerse con js esto, esta es una alternativa-->
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./pages/locales.html">Locales</a></li>
+                    <li><a href="./pages/menu.html">Menu</a></li>
+                    <li><a href="./pages/nosotros.html">Nuestra historia</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="home">
@@ -30,7 +36,8 @@
             <h2>HOMEMADE COFFEE</h2>
         </div>
         <div class="reserva">
-            <button><a href="https://api.whatsapp.com/send/?phone=5491130340087" target="_blank">Reservá tu mesa</a></button>
+            <button><a href="https://api.whatsapp.com/send/?phone=5491130340087" target="_blank">Reservá tu
+                    mesa</a></button>
             <!--Ver si tengo que poner algo, creo q sí, xq debería llevarte a WPP-->
         </div>
         <div class="eslogan">
@@ -39,16 +46,16 @@
     </main>
     <footer>
         <div class="redes">
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/" class="face" target="_blank"><img src="./assets/img/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/" class="ig" target="_blank"><img src="./assets/img/instagram.png" alt=""></a>
         </div>
         <div class="horarios">
             <p>Lunes a jueves de 8 a 20 hs</p>
             <p>Sábados y domingos de 9 a 21 hs</p>
         </div>
         <div class="wpp">
-            <a href="https://api.whatsapp.com/send/?phone=5491130340087" target="_blank"><img
-                    src="../assets/img/whatsapp.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send/?phone=5491130340087" class="whats" target="_blank"><img
+                    src="./assets/img/whatsapp.png" alt=""></a>
         </div>
     </footer>
 </body>
