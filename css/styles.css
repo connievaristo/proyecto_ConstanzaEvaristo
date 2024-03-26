@@ -630,9 +630,6 @@ footer {
         text-align: center;
     }
 
-
-
-
     .logo h1 {
         font-size: 80px;
     }
@@ -651,27 +648,34 @@ footer {
     }
 
     footer {
-        height: auto;
+        /* height: auto; */
         display: grid;
+        height: 75px;
         grid-template-columns: 0.4fr 0.8fr 0.4fr;
         grid-template-rows: 1fr;
         grid-template-areas: "redes" "horarios" "wpp";
     }
 
-    .redes{
-        grid-column-end: 2;
+    .redes {
+        display: flex;
+        flex-direction: row;
+        left: 0px;
+        padding: 0.5rem;
     }
 
-    .horarios{
+    .horarios {
+        display: flex;
+        flex-wrap: wrap;
         grid-column-start: 2;
     }
 
-
-
+    .horarios p {
+        font-size: 17px;
+    }
 }
 
-@media(max-width: 440px){
-    .redes{
+@media(max-width: 450px) {
+    .redes {
         display: none;
     }
 }
@@ -680,7 +684,7 @@ footer {
 
 /*/mobile 320/*/
 
-    @media(max-width: 320px) {
+@media(max-width: 320px) {
     body {
         width: 100%;
         height: 100%;
@@ -754,6 +758,7 @@ footer {
 
     footer {
         display: grid;
+        height: auto;
         grid-template-columns: 1fr 0.4fr;
         grid-template-rows: 1fr;
         grid-template-areas:
@@ -795,26 +800,27 @@ footer {
 }
 
 @media(max-width:262px) {
-    .home{
+    .home {
         width: 100%;
         height: 100%;
     }
-    .logo{
+
+    .logo {
         width: 100%;
         height: 100%;
         font-size: smaller;
     }
 
-    .logo h1{
+    .logo h1 {
         font-size: 40px;
     }
 
-    .logo h2{
-        font-size:8px;
+    .logo h2 {
+        font-size: 8px;
     }
 
 
-    .wpp img{
+    .wpp img {
         padding-right: 10px;
     }
 
