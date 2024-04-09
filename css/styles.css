@@ -20,9 +20,10 @@ header {
     align-items: center;
     background-color: #f6ebda;
     width: 100%;
-    height: 70px;
+    /* height: 70px; */
     position: sticky;
     top: 0;
+    padding: 20px;
 }
 
 header ul {
@@ -76,8 +77,8 @@ header a {
 header img {
     position: fixed;
     top: 0px;
-    left: 10px;
-    padding-top: 15px;
+    /* left: 10px; */
+    padding-top: 25px;
 }
 
 /*MAIN*/
@@ -261,9 +262,9 @@ h1 {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.5fr repeat(5, 0.8fr);
     justify-content: center;
-    /* width: 50%; */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    width: 55%;
+    padding: 2rem 10px 2rem 0px;
+    margin: 10px 0px 10px 10px;
 }
 
 
@@ -332,11 +333,13 @@ h1 {
 
 }
 
-.mapaC {
-    display: flex;
+ .mapaC {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    /*display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .mapaC iframe {
@@ -590,7 +593,7 @@ footer {
         font-size: 22px;
         gap: 5px;
     }
-    
+
 
     .mapaC iframe {
         width: 100%;
@@ -642,7 +645,8 @@ footer {
     header {
         width: 100%;
     }
-/* 
+
+    /* 
     nav ul li a {
         color: #1f1c1b;
     }
@@ -767,8 +771,8 @@ footer {
     .stores section button {
         margin-left: 30%;
         padding: 10px 35px;
-}
-    
+    }
+
 
     footer {
         /* height: auto; */
@@ -776,7 +780,8 @@ footer {
         height: 75px;
         grid-template-columns: 0.4fr 0.8fr 0.4fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "redes" "horarios" "wpp";;
+        grid-template-areas: "redes" "horarios" "wpp";
+        ;
     }
 
     .redes {
@@ -810,6 +815,7 @@ footer {
     .redes {
         display: none;
     }
+
     .horarios p {
         font-size: 15px;
     }
@@ -914,9 +920,9 @@ footer {
     .stores section div {
         font-size: 14px;
     }
-    
 
-    .stores h2{
+
+    .stores h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -978,6 +984,7 @@ footer {
         width: 100%;
         height: 100%;
     }
+
     .pageTitle h1 {
         font-size: 1.5em;
     }
