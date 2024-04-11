@@ -149,20 +149,33 @@ h1 {
     margin: 10px;
 }
 
+.bannerH{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 300px 50px;
+    grid-template-areas:
+    "banner banner"
+    "banner banner";
+}
 
 .banner {
+    grid-area:banner;
     width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: cover;
 }
 
-.bannerH h2 {
+.bannerH h3 {
+    grid-column-start: 2;
+    grid-row-start: 2;
     display: flex;
     justify-content: right;
-    position: relative;
+    margin-right: 1rem;
+    /* position: relative;
     top: -4.85rem;
     right: 1rem;
-    bottom: 2rem;
+    bottom: 2rem; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     opacity: 1;
@@ -299,7 +312,7 @@ h1 {
     justify-content: center;
     width: 50%;
     height: 3rem;
-    margin-left: 7.25rem;
+    margin-left: 10.25rem; /*antes:7.25*/
     /*margin-left: auto;  Empuja el botón hacia la derecha
     margin-bottom: 20px; */
     font-family: "Oswald", sans-serif;
@@ -328,7 +341,7 @@ h1 {
     margin-left: 0.5rem;
     margin-bottom: 0.2rem;
     border: none;
-    width: 18rem;
+    width: 30rem;
     height: 1.75rem;
 
 }
@@ -437,34 +450,41 @@ h1 {
     ;
     padding: 15px 0px 15px 0px;
     /* padding: ; */
-
     /* background-color: #F1F2EF; */
+}
+
+.us section{
+    align-self: center;
+    width: 520PX;
+    height: 570px;
+    margin: 0.125rem 4rem 0.125rem;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #2C1910;
+    border-radius: 5%;
+    background-color: #FFFBEF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .who {
     grid-area: who;
-    align-items: center;
-    width: 480px;
-    height: 600px;
-    margin: 0.125rem 1rem 0.125rem;
-    padding: 10px 20px 10px 20px;
-    border: 2px solid #2C1910;
-    border-radius: 5%;
-    background-color: #FFFBEF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* align-self: center; */
 }
 
 .how {
     grid-area: how;
-    align-items: center;
-    width: 450px;
-    height: 580px;
+    /* align-self: center;  */
+    /* height: 600px;
     margin: 0.125rem 1rem 0.125rem;
     padding: 10px 20px 10px 20px;
     border: 2px solid #2C1910;
     border-radius: 5%;
     background-color: #FFFBEF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.us section p{
+    padding: 0.525rem 0rem 0.525rem 0.725rem;
+    margin: 0.15rem 0.2rem 0.15rem 0.2rem;
 }
 
 .contactForm {
