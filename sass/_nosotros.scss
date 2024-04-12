@@ -1,0 +1,76 @@
+.bannerH {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 300px 50px;
+    grid-template-areas:
+        "banner banner"
+        "banner banner";
+
+    h3 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        display: flex;
+        justify-content: right;
+        margin-right: 1rem;
+        /* position: relative;
+        top: -4.85rem;
+        right: 1rem;
+        bottom: 2rem; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        opacity: 1;
+        letter-spacing: 2px;
+        color: #fff6ea;
+        /**/
+        text-shadow: 3rem 0.1rem 1rem #1f1c1b;
+    }
+}
+
+.bannerHh {
+    grid-area: banner;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.us {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    grid-template-areas:
+        ". who how ."
+    ;
+    padding: 15px 0px 15px 0px;
+
+    section {
+        align-self: center;
+        width: 520PX;
+        height: 570px;
+        margin: 0.125rem 4rem 0.125rem;
+        padding: 10px 20px 10px 20px;
+        border: 2px solid #2C1910;
+        border-radius: 5%;
+        background-color: #FFFBEF;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    section p {
+        padding: 0.525rem 0rem 0.525rem 0.725rem;
+        margin: 0.15rem 0.2rem 0.15rem 0.2rem;
+
+    }
+
+    .who {
+        grid-area: who;
+    }
+
+    .how {
+        grid-area: how;
+    }
+
+}

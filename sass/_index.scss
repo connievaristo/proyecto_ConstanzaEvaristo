@@ -1,0 +1,81 @@
+//index
+.home {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/fondo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: 15px;
+    text-decoration: none;
+
+    h1 {
+        padding-top: 40px;
+        padding-bottom: 5px;
+        font-size: 100px;
+        color: #E1B789;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 5px 1px 2px #2C1910;
+    }
+
+    h2 {
+        font-size: 25px;
+        color: #FFF6EA;
+        text-shadow: -1.2px 1px 1px #D6B38D;
+        padding: 2px 4px;
+        margin: 5px;
+    }
+}
+
+.reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    button {
+        padding: 1rem 2rem 1rem 2rem;
+        border: 1px solid #F6EBDA;
+        border-radius: 1rem;
+        margin: 1rem;
+        background-color: #f6ebdafa;
+        box-shadow: -0.1rem 0.1rem 0.625rem black;
+    }
+
+    a {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #2C1910;
+    }
+}
+
+.eslogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: 550;
+        font-size: 42px;
+        color: #E2C09A;
+        text-shadow: 2px 2px 1.5px #2C1910;
+        text-align: center;
+        letter-spacing: 0.325rem;
+    }
+}

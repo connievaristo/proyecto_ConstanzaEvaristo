@@ -1,0 +1,168 @@
+//estilos generales
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.oswald-uniquifier {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+//HEADER//
+
+header {
+    /*display: flex;
+    flex-direction: row;*/
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f6ebda;
+    width: 100%;
+    /* height: 70px; */
+    position: sticky;
+    top: 0;
+    padding: 20px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 40px;
+    }
+
+    a {
+        font-family: "Oswald", sans-serif;
+        font-size: 26px;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 5px;
+    }
+
+    img {
+        position: fixed;
+        top: 0px;
+        /* left: 10px; */
+        padding-top: 25px;
+    }
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6ebdae5;
+    color: #1f1c1b;
+
+    .logoI {
+        font-weight: 700;
+    }
+
+    div ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin-top: 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #1f1c1b;
+    }
+
+    #toggle,
+    label {
+        /*el # es para llamar un id*/
+        display: none;
+        /*así desaparece*/
+    }
+}
+
+
+//main
+.pageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #9b9a98b0;
+    text-transform: uppercase;
+}
+
+.banner {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    opacity: 1;
+    letter-spacing: 10px;
+    color: #fff6ea;
+    text-shadow: 0.1rem 0.1rem 0.625rem#2C1910;
+    margin: 10px;
+}
+
+
+//footer
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #f6ebda;
+    position: sticky;
+    bottom: 0;
+
+    .redes {
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+        /*lo fija abajo!*/
+        padding-left: 25px;
+        padding-top: 5px;
+        margin: 1px;
+    }
+
+    .redes img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .horarios {
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .wpp {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        padding-right: 25px;
+        padding-top: 5px;
+    }
+
+    .wpp img {
+        width: 60px;
+        height: 60px;
+    }
+}
