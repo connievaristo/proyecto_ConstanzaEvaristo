@@ -107,25 +107,26 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: auto;
   background-color: #f6ebda;
   position: sticky;
   bottom: 0;
+  padding: 10px;
 }
-footer .redes {
+
+.redes {
   position: fixed;
   left: 10px;
   bottom: 10px;
   /*lo fija abajo!*/
-  padding-left: 25px;
-  padding-top: 5px;
   margin: 1px;
 }
-footer .redes img {
+.redes img {
   width: 40px;
   height: 40px;
 }
-footer .horarios {
+
+.horarios {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   justify-content: center;
@@ -133,16 +134,16 @@ footer .horarios {
   text-align: center;
   text-transform: uppercase;
 }
-footer .wpp {
+
+.wpp {
   width: 60px;
   height: 60px;
+  margin-left: 30px;
   position: fixed;
   right: 10px;
   bottom: 10px;
-  padding-right: 25px;
-  padding-top: 5px;
 }
-footer .wpp img {
+.wpp img {
   width: 60px;
   height: 60px;
 }
@@ -241,19 +242,13 @@ footer .wpp img {
 }
 
 .stores {
-  /* display: flex;
-  flex-direction:column; */
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 0.5fr repeat(5, 0.8fr);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 55%;
   padding: 2rem 10px 2rem 0px;
-  margin: 10px 0px 10px 10px;
 }
 .stores section {
-  /* display: flex;
-  flex-direction:  column; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: none;
@@ -278,7 +273,7 @@ footer .wpp img {
   justify-content: center;
   width: 50%;
   height: 3rem;
-  margin-left: 10.25rem;
+  margin-left: 20%;
   /*antes:7.25*/
   /*margin-left: auto;  Empuja el botón hacia la derecha
   margin-bottom: 20px; */
@@ -306,7 +301,7 @@ footer .wpp img {
   margin-left: 0.5rem;
   margin-bottom: 0.2rem;
   border: none;
-  width: 30rem;
+  width: 50%;
   height: 1.75rem;
 }
 
@@ -327,73 +322,31 @@ footer .wpp img {
 .menuMain {
   width: 100%;
   height: auto;
-  background-color: #9FABB1;
+  background-color: #b6c5cc;
 }
 
 .menues {
-  /* display: flex;
-  flex-direction: row; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: none;
-  grid-template-areas: "menu1 menu2 menu3";
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 20px 0px 20px 0px;
+  align-items: flex-start;
+  margin-right: 20px;
 }
 .menues section {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  width: 420px;
-  height: 520px;
+  width: 25%;
   padding: 10px 20px 10px 20px;
-  border: 2px solid #2C1910;
-  border-radius: 5%;
-  background-color: #FFFBEF;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.menu1 {
-  /* width: 300px;
-  height: 520px; */
-  margin-left: 20rem;
-}
-.menu1 div {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 2px;
-}
-
-.menu2 {
-  /* width: 400px;
-  height: 420px;*/
-  margin: 0px 5rem 0px 5rem;
-}
-.menu2 div {
-  display: flex;
-  flex-direction: column;
   margin: 10px;
-}
-.menu2 div h2 {
-  margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1f1c1b;
+  text-wrap: pretty;
 }
 
 .combos ol {
   padding-left: 20px;
-}
-
-.menu3 {
-  /* width: 410px;
-  height: 500px;*/
-  margin-right: 20rem;
-}
-.menu3 div {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 2px;
 }
 
 .bannerH {
@@ -522,15 +475,6 @@ footer .wpp img {
   nav div ul {
     gap: 1rem;
   }
-  header a {
-    font-size: 22px;
-    gap: 5px;
-  }
-  .mapaC iframe {
-    width: 100%;
-    height: 100%;
-    margin: 10px 0px 10px 0px;
-  }
   nav ul li a {
     color: #1f1c1b;
   }
@@ -551,10 +495,19 @@ footer .wpp img {
   nav #toggle:checked ~ .menu {
     height: 100%;
   }
-  .material-icons {
+  nav .material-icons {
     padding-right: 20px;
     font-size: 50px;
     color: #2C1910;
+  }
+  header a {
+    font-size: 22px;
+    gap: 5px;
+  }
+  .mapaC iframe {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px 10px 0px;
   }
 }
 @media (max-width: 768px) {
@@ -565,38 +518,6 @@ footer .wpp img {
   header {
     width: 100%;
   }
-  /* 
-  nav ul li a {
-      color: #1f1c1b;
-  }
-
-  nav .menu {
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-  }
-
-  nav ul {
-      flex-direction: column;
-      align-items: center;
-      padding: 8px 0;
-  }
-
-  nav label {
-      display: inline-flex;
-      cursor: pointer;
-
-  }
-
-  nav #toggle:checked~.menu {
-      height: 100%;
-  }
-
-  .material-icons {
-      padding-right: 20px;
-      font-size: 50px;
-      color: #2C1910;
-  } */
   /*/main*/
   .home {
     height: 48rem;
@@ -630,17 +551,11 @@ footer .wpp img {
   }
   .storesDos {
     display: flex;
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: 0.1fr 1fr; */
-    /* grid-template-areas:
-        "mapaC"
-        "stores"; */
     flex-direction: column-reverse;
   }
   .mapaC {
+    display: flex;
     flex-direction: row;
-    /* display: grid;
-    grid-row-start: 1; */
   }
   .mapaC iframe {
     height: 100%;
@@ -654,15 +569,7 @@ footer .wpp img {
     justify-self: center;
     padding: 10px;
   }
-  .location {
-    justify-self: center;
-    margin-right: 0px;
-  }
-  .location input {
-    width: 50%;
-  }
   .stores section {
-    margin-right: 0px;
     width: 100%;
   }
   .stores section div {
@@ -672,24 +579,52 @@ footer .wpp img {
     margin-left: 30%;
     padding: 10px 35px;
   }
+  .location {
+    justify-self: center;
+    margin-right: 0px;
+  }
+  .location input {
+    width: 50%;
+  }
+  .menues {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-areas: "menu1 menu2" "menu3 menu4";
+  }
+  .menues section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 30px 10px 10px;
+    font-size: 16px;
+  }
+  .menu1 {
+    grid-area: "menu1";
+  }
+  .menu2 {
+    grid-area: "menu2";
+  }
+  .menu3 {
+    grid-area: "menu3";
+  }
+  .menu4 {
+    grid-area: "menu4";
+  }
   footer {
     /* height: auto; */
     display: grid;
     height: 75px;
     grid-template-columns: 0.4fr 0.8fr 0.4fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "redes" "horarios" "wpp";
+    grid-template-areas: "redes horarios wpp";
   }
   .redes {
-    display: flex;
-    flex-direction: row;
-    left: 0px;
     padding: 0.5rem;
   }
   .horarios {
-    display: flex;
-    flex-wrap: wrap;
     grid-column-start: 2;
+    grid-column-end: 2;
   }
   .horarios p {
     font-size: 17px;
@@ -702,11 +637,33 @@ footer .wpp img {
   .location input {
     width: 38%;
   }
-  .redes {
-    display: none;
+  footer {
+    padding: 10px;
+  }
+  .menues section {
+    padding: 10px;
+    width: 90%;
+    font-size: 13px;
+  }
+  .horarios {
+    flex-wrap: nowrap;
   }
   .horarios p {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .redes {
+    padding: 10px;
+  }
+  .redes img {
+    width: 35px;
+    height: 35px;
+  }
+  .wpp {
+    left: 70%;
+  }
+  .wpp img {
+    width: 45px;
+    height: 45px;
   }
 }
 /*/mobile 320/*/
@@ -720,20 +677,15 @@ footer .wpp img {
     font-size: 40px;
     color: #2C1910;
   }
-  header img {
-    width: 120px;
-  }
   header {
     height: 70px;
   }
+  header img {
+    width: 120px;
+  }
   /*/main*/
   .home {
-    /* width: 100%;
-    height: 890px;*/
     display: grid;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
     grid-template-columns: 1fr;
     grid-auto-rows: 0.2fr 0.5fr 0.2fr;
     grid-template-areas: "logo" "reserva" "eslogan";
@@ -769,9 +721,6 @@ footer .wpp img {
   .pageTitle h1 {
     text-align: center;
   }
-  /* .banner {
-      display: none;
-  } */
   .location {
     font-size: 1.15rem;
   }
@@ -779,10 +728,6 @@ footer .wpp img {
     display: flex;
     flex-direction: column;
   }
-  /*.stores section {
-       display: flex;
-      flex-direction: column; 
-  }*/
   .stores section div {
     font-size: 14px;
   }
@@ -796,16 +741,20 @@ footer .wpp img {
   .stores section button {
     font-size: 1rem;
     /*margin-left: 20%;
-     padding: 10px 35px; */
+    padding: 10px 35px; */
+  }
+  .menues section {
+    font-size: 11px;
   }
   footer {
     display: grid;
     height: auto;
     grid-template-columns: 1fr 0.4fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "horarios" "wpp";
+    grid-template-areas: "horarios wpp";
   }
   .horarios {
+    grid-area: "horarios";
     grid-column-start: 1;
     font-size: 15px;
     color: #1f1c1b;
@@ -821,17 +770,17 @@ footer .wpp img {
     padding: 0px 40px 5px 0px; */
   }
   .wpp {
-    position: sticky;
-    padding-left: 25px;
+    grid-area: "wpp";
+    grid-column-start: 2;
+    left: 60%;
     /*margin-bottom: 5px;
     margin-right: 50px;*/
   }
-  .wpp img {
-    width: 50PX;
-    height: 50PX;
-  }
 }
 @media (max-width: 262px) {
+  body {
+    height: auto;
+  }
   .home {
     width: 100%;
     height: 100%;
@@ -850,8 +799,18 @@ footer .wpp img {
   .logo h2 {
     font-size: 8px;
   }
+  .menues section {
+    font-size: 9px;
+  }
+  footer {
+    height: auto;
+  }
+  .wpp {
+    bottom: 12%;
+  }
   .wpp img {
-    padding-right: 10px;
+    width: 35px;
+    height: 35px;
   }
 }
 

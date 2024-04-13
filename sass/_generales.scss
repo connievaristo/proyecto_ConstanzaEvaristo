@@ -116,52 +116,53 @@ h1 {
 
 
 //footer
+
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 70px;
+    height: auto;
     background-color: #f6ebda;
     position: sticky;
     bottom: 0;
+    padding: 10px;
+}
 
-    .redes {
-        position: fixed;
-        left: 10px;
-        bottom: 10px;
-        /*lo fija abajo!*/
-        padding-left: 25px;
-        padding-top: 5px;
-        margin: 1px;
-    }
-
-    .redes img {
+.redes {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    /*lo fija abajo!*/
+    // padding-left: 25px;
+    // padding-top: 25px;
+    margin: 1px;
+ img {
         width: 40px;
         height: 40px;
     }
+}
 
-    .horarios {
-        font-family: "Oswald", sans-serif;
-        font-size: 20px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        text-transform: uppercase;
-    }
+.horarios {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
 
-    .wpp {
-        width: 60px;
-        height: 60px;
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-        padding-right: 25px;
-        padding-top: 5px;
-    }
-
-    .wpp img {
+.wpp {
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    // padding-right: 25px;
+    // padding-top: 5px;
+ img {
         width: 60px;
         height: 60px;
     }
