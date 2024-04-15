@@ -16,11 +16,11 @@
 //HEADER//
 
 header {
-    /*display: flex;
-    flex-direction: row;*/
+    // display: flex;
+    // flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: #f6ebda;
+    background-color: map-get($colores, claro1);
     width: 100%;
     /* height: 70px; */
     position: sticky;
@@ -42,16 +42,17 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 5px;
+
         &:hover {
-            color: #fff6ea;
-            background-color: #2C1910;
-          }
+            color: map-get($colores, claro1);
+            background-color: map-get($colores, oscuro1);
+        }
     }
 
     img {
-        position: fixed;
+        position: sticky;
         top: 0px;
-        /* left: 10px; */
+        left: 10px;
         padding-top: 25px;
     }
 }
@@ -62,8 +63,8 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #f6ebdae5;
-    color: #1f1c1b;
+    background-color: map-get($colores, claro1);
+    color: map-get($colores, oscuro1);
 
     .logoI {
         font-weight: 700;
@@ -78,7 +79,7 @@ nav {
 
     ul li a {
         text-decoration: none;
-        color: #1f1c1b;
+        color: map-get($colores, oscuro1);
     }
 
     #toggle,
@@ -95,15 +96,17 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 70px;
-    background-color: #9b9a98b0;
+    @include medidas(100%,70px);
+    // width: 100%;
+    // height: 70px;
+    background-color: map-get($colores, gray);
     text-transform: uppercase;
 }
 
 .banner {
-    width: 100%;
-    height: 50%;
+    @include medidas(100%,50%);
+    //width: 100%;
+    //height: 50%;
     object-fit: cover;
 }
 
@@ -114,8 +117,8 @@ h1 {
     font-size: 40px;
     opacity: 1;
     letter-spacing: 5px;
-    color: #fff6ea;
-    text-shadow: 0.1rem 0.1rem 0.625rem#2C1910;
+    color: map-get($colores, claro1);
+    text-shadow: 0.1rem 0.1rem 0.625rem map-get($colores, oscuro1);
     margin: 10px;
 }
 
@@ -127,9 +130,10 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: #f6ebda;
+    @include medidas(100%,auto);
+    //width: 100%;
+    //height: auto;
+    background-color: map-get($colores, claro1);
     position: sticky;
     bottom: 0;
     padding: 10px;
@@ -143,9 +147,11 @@ footer {
     // padding-left: 25px;
     // padding-top: 25px;
     margin: 1px;
- img {
-        width: 40px;
-        height: 40px;
+
+    img {
+        @include medidas(40px,40px);
+        //width: 40px;
+        //height: 40px;
     }
 }
 
@@ -159,16 +165,17 @@ footer {
 }
 
 .wpp {
-    width: 60px;
-    height: 60px;
+    @include medidas(60px,60px);
+    //width: 60px;
+    //height: 60px;
     margin-left: 30px;
     position: fixed;
     right: 10px;
     bottom: 10px;
+
     // padding-right: 25px;
     // padding-top: 5px;
- img {
-        width: 60px;
-        height: 60px;
+    img {
+        @include medidas(60px,60px);
     }
 }

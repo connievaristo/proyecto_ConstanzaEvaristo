@@ -1,7 +1,8 @@
 //index
 .home {
-    width: 100%;
-    height: 90%;
+    @include medidas(100%,100%);
+    //width: 100%;
+    //height: 100%;
     justify-content: center;
     align-items: center;
     background-image: url(../assets/img/fondo.jpg);
@@ -22,17 +23,18 @@
         padding-top: 40px;
         padding-bottom: 5px;
         font-size: 100px;
-        color: #E1B789;
+        color: map-get($colores, logoH1);
         text-transform: uppercase;
         text-decoration: none;
-        text-shadow: 5px 1px 2px #2C1910;
+        text-shadow: 5px 1px 2px map-get($colores, oscuro1);
         letter-spacing: 15px;
     }
 
     h2 {
-        font-size: 25px;
-        color: #FFF6EA;
-        text-shadow: -1.2px 1px 1px #D6B38D;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: map-get($colores, claro1);
+        text-shadow: -1.2px 1px 1px map-get($colores, logoH1);
         padding: 2px 4px;
         margin: 5px;
     }
@@ -47,10 +49,10 @@
 
     button {
         padding: 1rem 2rem 1rem 2rem;
-        border: 1px solid #F6EBDA;
+        border: 1px solid map-get($colores , claro1);
         border-radius: 1rem;
         margin: 1rem;
-        background-color: #f6ebdafa;
+        background-color: map-get($colores , claro1);
         box-shadow: -0.1rem 0.1rem 0.625rem black;
     }
 
@@ -59,7 +61,7 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         text-decoration: none;
-        color: #2C1910;
+        color: map-get($colores , oscuro1);
     }
 }
 
@@ -74,8 +76,8 @@
         font-style: italic;
         font-weight: 550;
         font-size: 42px;
-        color: #E2C09A;
-        text-shadow: 2px 2px 1.5px #2C1910;
+        color: map-get($colores , claro2);
+        text-shadow: 2px 2px 1.5px map-get($colores , oscuro1);
         text-align: center;
         letter-spacing: 0.325rem;
     }

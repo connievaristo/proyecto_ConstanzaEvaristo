@@ -1,7 +1,8 @@
 .menuMain {
-    width: 100%;
-    height: auto;
-    background-color: #b6c5cc;
+    @include medidas(100%,auto);
+    //width: 100%;
+    //height: auto;
+    background-color: map-get($colores, lightGray );
 }
 
 .menues {
@@ -19,7 +20,7 @@
     padding: 10px 20px 10px 20px;
     margin: 10px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #1f1c1b;
+    color: map-get($colores,oscuro1 );
     text-wrap: pretty;
     }
 }

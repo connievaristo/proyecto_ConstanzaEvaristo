@@ -13,8 +13,6 @@
 }
 
 header {
-  /*display: flex;
-  flex-direction: row;*/
   justify-content: flex-end;
   align-items: center;
   background-color: #f6ebda;
@@ -39,13 +37,13 @@ header a {
   letter-spacing: 5px;
 }
 header a:hover {
-  color: #fff6ea;
+  color: #f6ebda;
   background-color: #2C1910;
 }
 header img {
-  position: fixed;
+  position: sticky;
   top: 0px;
-  /* left: 10px; */
+  left: 10px;
   padding-top: 25px;
 }
 
@@ -54,8 +52,8 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(246, 235, 218, 0.8980392157);
-  color: #1f1c1b;
+  background-color: #f6ebda;
+  color: #2C1910;
 }
 nav .logoI {
   font-weight: 700;
@@ -68,7 +66,7 @@ nav div ul {
 }
 nav ul li a {
   text-decoration: none;
-  color: #1f1c1b;
+  color: #2C1910;
 }
 nav #toggle,
 nav label {
@@ -100,7 +98,7 @@ h1 {
   font-size: 40px;
   opacity: 1;
   letter-spacing: 5px;
-  color: #fff6ea;
+  color: #f6ebda;
   text-shadow: 0.1rem 0.1rem 0.625rem #2C1910;
   margin: 10px;
 }
@@ -154,7 +152,7 @@ footer {
 
 .home {
   width: 100%;
-  height: 90%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   background-image: url(../assets/img/fondo.jpg);
@@ -182,9 +180,10 @@ footer {
   letter-spacing: 15px;
 }
 .logo h2 {
-  font-size: 25px;
-  color: #FFF6EA;
-  text-shadow: -1.2px 1px 1px #D6B38D;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #f6ebda;
+  text-shadow: -1.2px 1px 1px #E1B789;
   padding: 2px 4px;
   margin: 5px;
 }
@@ -198,10 +197,10 @@ footer {
 }
 .reserva button {
   padding: 1rem 2rem 1rem 2rem;
-  border: 1px solid #F6EBDA;
+  border: 1px solid #f6ebda;
   border-radius: 1rem;
   margin: 1rem;
-  background-color: rgba(246, 235, 218, 0.9803921569);
+  background-color: #f6ebda;
   box-shadow: -0.1rem 0.1rem 0.625rem black;
 }
 .reserva a {
@@ -256,10 +255,10 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #F6EBDA;
+  color: #f6ebda;
   background-color: rgba(0, 0, 0, 0.637);
   margin-right: 20px;
-  border-bottom: 1px solid #F6EBDA;
+  border-bottom: 1px solid #f6ebda;
   padding: 10px 20px;
 }
 .stores section div {
@@ -276,7 +275,7 @@ footer {
   margin-left: 20%;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
-  background-color: #F6EBDA;
+  background-color: #f6ebda;
   border-radius: 5px;
   border: 1px solid #2C1910;
   padding: 10px 10px;
@@ -286,7 +285,7 @@ footer {
   text-decoration: none;
 }
 .stores section button a:hover {
-  background-color: #D8BFA1;
+  background-color: #E2C09A;
 }
 
 .location {
@@ -302,16 +301,12 @@ footer {
   margin-bottom: 0.2rem;
   border: none;
   width: 50%;
-  height: 1.75rem;
+  height: 28px;
 }
 
 .mapaC {
   margin: 10px 0px 10px 0px;
   padding: 10px 0px 10px 0px;
-  /*display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; */
 }
 .mapaC iframe {
   width: 700px;
@@ -341,12 +336,18 @@ footer {
   padding: 10px 20px 10px 20px;
   margin: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1f1c1b;
+  color: #2C1910;
   text-wrap: pretty;
 }
 
 .combos ol {
   padding-left: 20px;
+}
+
+.nosotros {
+  width: 100%;
+  height: auto;
+  background-color: #F1F2EF;
 }
 
 .bannerH {
@@ -362,17 +363,12 @@ footer {
   display: flex;
   justify-content: right;
   margin-right: 1rem;
-  /* position: relative;
-  top: -4.85rem;
-  right: 1rem;
-  bottom: 2rem; */
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 38px;
   opacity: 1;
   letter-spacing: 2px;
-  color: #fff6ea;
-  /**/
-  text-shadow: 3rem 0.1rem 1rem #1f1c1b;
+  color: #f6ebda;
+  text-shadow: 3rem 0.1rem 1rem #2C1910;
 }
 
 .bannerHh {
@@ -383,28 +379,31 @@ footer {
 }
 
 .us {
-  /* display: flex;
-  flex-direction: row; */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: none;
-  grid-template-areas: ". who how .";
-  padding: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 0px;
 }
 .us section {
-  align-self: center;
-  width: 520PX;
-  height: 570px;
-  margin: 0.125rem 4rem 0.125rem;
+  width: 50%;
+  height: 40%;
+  margin: 0.125rem 2rem 0.125rem;
   padding: 10px 20px 10px 20px;
-  border: 2px solid #2C1910;
-  border-radius: 5%;
-  background-color: #FFFBEF;
+  border-radius: 1.5%;
   font-family: Georgia, "Times New Roman", Times, serif;
+  text-wrap: wrap;
+  color: #2C1910;
+}
+.us section h3 {
+  text-align: center;
+  font-size: 20px;
 }
 .us section p {
+  font-size: 16px;
   padding: 0.525rem 0rem 0.525rem 0.725rem;
   margin: 0.15rem 0.2rem 0.15rem 0.2rem;
+  text-align: justify;
 }
 .us .who {
   grid-area: who;
@@ -422,7 +421,6 @@ footer {
 .contactForm {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -432,18 +430,16 @@ footer {
 .contactForm h2 {
   font-family: "Oswald", sans-serif;
   font-size: 2.35rem;
-  color: #e7e7e7;
+  color: #F1F2EF;
   text-shadow: 1px 4px 4px #2C1910;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 5px;
   margin: 2.25rem 1rem 1rem 1rem;
 }
 .contactForm div {
-  /* font-size: 20px;
-  color: #5F3927;
-  background-color: #fcfaf885;*/
   margin: 30px;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 30px;
   height: 400px;
 }
 .contactForm input {
@@ -468,7 +464,6 @@ footer {
 .contact {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
 }
 
 @media (max-width: 1024px) {
@@ -543,6 +538,13 @@ footer {
     height: 30%;
     object-fit: cover;
   }
+  .bannerH h2 {
+    font-size: 30px;
+    text-wrap: nowrap;
+    margin-left: -1rem;
+    letter-spacing: 0px;
+    text-shadow: -6px 1px 5px #2C1910;
+  }
   .pageTitle {
     height: auto;
   }
@@ -559,8 +561,6 @@ footer {
     flex-direction: row;
   }
   .mapaC iframe {
-    height: 100%;
-    width: 100%;
     margin: 10px;
   }
   .stores {
@@ -612,6 +612,34 @@ footer {
   .menu4 {
     grid-area: "menu4";
   }
+  .us section {
+    margin: 0.125rem 0rem;
+    padding: 5px 15px;
+  }
+  .us section h3 {
+    font-size: 18px;
+  }
+  .us section p {
+    font-size: 14px;
+  }
+  .contact {
+    width: 400px;
+  }
+  .contactForm h2 {
+    margin-bottom: 0rem;
+  }
+  .contactForm div {
+    padding: 0px;
+  }
+  .contactForm input {
+    width: 90%;
+    height: 3rem;
+    margin: 5px 10px;
+  }
+  .contactForm input#message {
+    width: 90%;
+    height: 5rem;
+  }
   footer {
     /* height: auto; */
     display: grid;
@@ -628,23 +656,46 @@ footer {
     grid-column-end: 2;
   }
   .horarios p {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 @media (max-width: 450px) {
+  header {
+    padding: 15px;
+  }
   .banner {
+    display: none;
+  }
+  .bannerH {
     display: none;
   }
   .location input {
     width: 38%;
   }
-  footer {
-    padding: 10px;
-  }
   .menues section {
     padding: 10px;
     width: 90%;
     font-size: 13px;
+  }
+  .us {
+    padding-top: 20px;
+  }
+  .us section p {
+    text-align: left;
+  }
+  .contact {
+    width: 20rem;
+    align-items: center;
+  }
+  .contactForm h2 {
+    font-size: 1.75rem;
+  }
+  .contactForm input {
+    margin: 5px;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 10px;
   }
   .horarios {
     flex-wrap: nowrap;
@@ -669,10 +720,6 @@ footer {
 }
 /*/mobile 320/*/
 @media (max-width: 320px) {
-  body {
-    width: 100%;
-    height: 100%;
-  }
   .material-icons {
     padding-right: 10px;
     font-size: 40px;
@@ -742,11 +789,21 @@ footer {
   }
   .stores section button {
     font-size: 1rem;
-    /*margin-left: 20%;
-    padding: 10px 35px; */
   }
   .menues section {
     font-size: 11px;
+  }
+  .us section {
+    padding: 3px 2px;
+  }
+  .us section p {
+    text-align: left;
+  }
+  .contactForm input {
+    font-size: 0.875rem;
+  }
+  .contact {
+    width: 15rem;
   }
   footer {
     display: grid;
@@ -759,7 +816,6 @@ footer {
     grid-area: "horarios";
     grid-column-start: 1;
     font-size: 15px;
-    color: #1f1c1b;
     margin: 10px 5px 15px 10px;
   }
   .horarios p {
@@ -768,15 +824,11 @@ footer {
   }
   .redes {
     display: none;
-    /* margin-bottom: 5px;
-    padding: 0px 40px 5px 0px; */
   }
   .wpp {
     grid-area: "wpp";
     grid-column-start: 2;
     left: 60%;
-    /*margin-bottom: 5px;
-    margin-right: 50px;*/
   }
 }
 @media (max-width: 262px) {
@@ -804,15 +856,15 @@ footer {
   .menues section {
     font-size: 9px;
   }
+  .contact {
+    padding: 10px;
+  }
   footer {
     height: auto;
   }
-  .wpp {
-    bottom: 12%;
-  }
   .wpp img {
     width: 35px;
-    height: 35px;
+    height: 34px;
   }
 }
 

@@ -23,7 +23,6 @@
         label {
             display: inline-flex;
             cursor: pointer;
-
         }
 
         #toggle:checked~.menu {
@@ -33,7 +32,7 @@
         .material-icons {
             padding-right: 20px;
             font-size: 50px;
-            color: #2C1910;
+            color: map-get($colores, oscuro1);
         }
     }
 
@@ -43,8 +42,9 @@
     }
 
     .mapaC iframe {
-        width: 100%;
-        height: 100%;
+        @include medidas(100%, 100%);
+        //width: 100%;
+        //height: 100%;
         margin: 10px 0px 10px 0px;
     }
 
@@ -52,8 +52,7 @@
 
 @media(max-width:768px) {
     body {
-        width: 100%;
-        height: 100%;
+        @include medidas(100%, 100%);
     }
 
     header {
@@ -67,9 +66,11 @@
 
     .logo {
         text-align: center;
+
         h1 {
             font-size: 80px;
         }
+
         h2 {
             font-size: 18px;
         }
@@ -85,13 +86,21 @@
     }
 
     .banner {
-        width: 100%;
-        height: 30%;
+        @include medidas(100%, 30%);
         object-fit: cover;
+    }
+
+    .bannerH h2 {
+        font-size: 30px;
+        text-wrap: nowrap;
+        margin-left: -1rem;
+        letter-spacing: 0px;
+        text-shadow: -6px 1px 5px map-get($colores , oscuro1);
     }
 
     .pageTitle {
         height: auto;
+
         h1 {
             text-align: center;
             font-size: 36px;
@@ -108,8 +117,7 @@
         flex-direction: row;
 
         iframe {
-            height: 100%;
-            width: 100%;
+            // @include medidas(100%,100%);
             margin: 10px;
         }
     }
@@ -177,6 +185,41 @@
         grid-area: "menu4";
     }
 
+    .us {
+        section {
+            margin: 0.125rem 0rem;
+            padding: 5px 15px;
+        }
+
+        section h3 {
+            font-size: 18px;
+        }
+
+        section p {
+            font-size: 14px;
+        }
+    }
+
+    .contact{
+        width: 400px;
+    }
+
+    .contactForm{
+        h2{
+            margin-bottom: 0rem;
+        }
+        div{
+            padding: 0px;
+        }
+        input{
+            @include medidas(90%,3rem);
+            margin: 5px 10px;
+        }
+        input#message{
+            @include medidas(90%,5rem);
+        }
+    }
+
     //footer
 
     footer {
@@ -198,23 +241,26 @@
         grid-column-end: 2;
 
         p {
-            font-size: 17px;
+            font-size: 15px;
         }
     }
 }
 
 @media(max-width: 450px) {
+    header {
+        padding: 15px;
+    }
 
     .banner {
         display: none;
     }
 
-    .location input {
-        width: 38%;
+    .bannerH {
+        display: none;
     }
 
-    footer {
-        padding: 10px;
+    .location input {
+        width: 38%;
     }
 
     .menues {
@@ -223,6 +269,33 @@
             width: 90%;
             font-size: 13px;
         }
+    }
+
+    .us {
+        padding-top: 20px;
+
+        section p {
+            text-align: left;
+        }
+    }
+
+    .contact{
+        width: 20rem;
+        align-items: center;
+    }
+
+    .contactForm{
+        h2{
+            font-size: 1.75rem;
+        }
+        input{
+            margin: 5px;
+            font-size: 1rem;
+        }
+    }
+
+    footer {
+        padding: 10px;
     }
 
     .horarios {
@@ -237,9 +310,7 @@
         padding: 10px;
 
         img {
-            width: 35px;
-            height: 35px;
-
+            @include medidas(35px, 35px);
         }
     }
 
@@ -247,8 +318,7 @@
         left: 70%;
 
         img {
-            width: 45px;
-            height: 45px;
+            @include medidas(45px, 45px);
         }
     }
 }
@@ -256,15 +326,14 @@
 /*/mobile 320/*/
 
 @media(max-width: 320px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
+    // body {
+    //     @include medidas(100%,100%);
+    // }
 
     .material-icons {
         padding-right: 10px;
         font-size: 40px;
-        color: #2C1910;
+        color: map-get($colores, oscuro1);
     }
 
     header {
@@ -288,8 +357,7 @@
 
     .logo {
         text-align: center;
-        width: 100%;
-        height: 100%;
+        @include medidas(100%, 100%);
 
         h1 {
             font-size: 50px;
@@ -301,8 +369,7 @@
     }
 
     .reserva {
-        width: 100%;
-        height: 100%;
+        @include medidas(100%, 100%);
         margin-top: -3rem;
         flex-wrap: nowrap;
 
@@ -312,8 +379,7 @@
     }
 
     .eslogan {
-        width: 100%;
-        height: 100%;
+        @include medidas(100%, 100%);
 
         p {
             text-align: center;
@@ -348,8 +414,6 @@
 
         section button {
             font-size: 1rem;
-            /*margin-left: 20%;
-         padding: 10px 35px; */
         }
     }
 
@@ -357,6 +421,25 @@
         section {
             font-size: 11px;
         }
+    }
+
+    .us {
+        section {
+            padding: 3px 2px;
+        }
+
+        section p {
+            text-align: left;
+        }
+    }
+
+    .contactForm{
+        input{
+            font-size: 0.875rem;
+        }
+    }
+    .contact{
+        width: 15rem;
     }
 
     //footer
@@ -373,7 +456,6 @@
         grid-area: "horarios";
         grid-column-start: 1;
         font-size: 15px;
-        color: #1f1c1b;
         margin: 10px 5px 15px 10px;
 
 
@@ -385,16 +467,12 @@
 
     .redes {
         display: none;
-        /* margin-bottom: 5px;
-    padding: 0px 40px 5px 0px; */
     }
 
     .wpp {
         grid-area: "wpp";
         grid-column-start: 2;
         left: 60%;
-        /*margin-bottom: 5px;
-        margin-right: 50px;*/
     }
 }
 
@@ -404,8 +482,7 @@
     }
 
     .home {
-        width: 100%;
-        height: 100%;
+        @include medidas(100%, 100%);
     }
 
     .pageTitle h1 {
@@ -413,8 +490,7 @@
     }
 
     .logo {
-        width: 100%;
-        height: 100%;
+        @include medidas(100%, 100%);
         font-size: smaller;
 
         h1 {
@@ -430,16 +506,17 @@
         font-size: 9px;
     }
 
+    .contact{
+        padding: 10px;
+    }
+
     footer {
         height: auto;
     }
 
     .wpp {
-        bottom: 12%;
-
         img {
-            width: 35px;
-            height: 35px;
+            @include medidas(35px, 34px);
         }
     }
 }
