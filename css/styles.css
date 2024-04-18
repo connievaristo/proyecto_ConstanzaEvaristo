@@ -39,6 +39,7 @@ header a {
 header a:hover {
   color: #f6ebda;
   background-color: #2C1910;
+  padding: 3px;
 }
 header img {
   position: sticky;

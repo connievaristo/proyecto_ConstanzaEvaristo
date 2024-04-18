@@ -46,6 +46,7 @@ header {
         &:hover {
             color: map-get($colores, claro1);
             background-color: map-get($colores, oscuro1);
+            padding: 3px;
         }
     }
 
