@@ -28,6 +28,12 @@ header ul {
   list-style: none;
   gap: 40px;
 }
+header ul li a:hover {
+  color: #f6ebda;
+  background-color: #2C1910;
+  padding: 3px;
+  transition: margin 4s;
+}
 header a {
   font-family: "Oswald", sans-serif;
   font-size: 26px;
@@ -36,16 +42,10 @@ header a {
   text-decoration: none;
   letter-spacing: 5px;
 }
-header a:hover {
-  color: #f6ebda;
-  background-color: #2C1910;
-  padding: 3px;
-}
 header img {
   position: sticky;
   top: 0px;
   left: 10px;
-  padding-top: 20px;
 }
 
 nav {
@@ -214,7 +214,7 @@ footer {
 .eslogan {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 4rem;
 }
 .eslogan p {

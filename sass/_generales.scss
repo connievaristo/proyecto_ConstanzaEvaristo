@@ -33,6 +33,14 @@ header {
         list-style: none;
         gap: 40px;
 
+        li a {
+            &:hover {
+                color: map-get($colores, claro1);
+                background-color: map-get($colores, oscuro1);
+                padding: 3px;
+                transition: margin 4s;
+            }
+        }
     }
 
     a {
@@ -42,19 +50,13 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 5px;
-
-        &:hover {
-            color: map-get($colores, claro1);
-            background-color: map-get($colores, oscuro1);
-            padding: 3px;
-        }
     }
 
     img {
         position: sticky;
         top: 0px;
         left: 10px;
-        padding-top: 20px;
+        // padding-top: 20px;
     }
 }
 
@@ -97,7 +99,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include medidas(100%,70px);
+    @include medidas(100%, 70px);
     // width: 100%;
     // height: 70px;
     background-color: map-get($colores, gray);
@@ -105,7 +107,7 @@ nav {
 }
 
 .banner {
-    @include medidas(100%,50%);
+    @include medidas(100%, 50%);
     //width: 100%;
     //height: 50%;
     object-fit: cover;
@@ -131,7 +133,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @include medidas(100%,auto);
+    @include medidas(100%, auto);
     //width: 100%;
     //height: auto;
     background-color: map-get($colores, claro1);
@@ -150,7 +152,7 @@ footer {
     margin: 1px;
 
     img {
-        @include medidas(40px,40px);
+        @include medidas(40px, 40px);
         //width: 40px;
         //height: 40px;
     }
@@ -166,7 +168,7 @@ footer {
 }
 
 .wpp {
-    @include medidas(60px,60px);
+    @include medidas(60px, 60px);
     //width: 60px;
     //height: 60px;
     margin-left: 30px;
@@ -177,6 +179,6 @@ footer {
     // padding-right: 25px;
     // padding-top: 5px;
     img {
-        @include medidas(60px,60px);
+        @include medidas(60px, 60px);
     }
 }
